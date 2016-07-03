@@ -1,0 +1,99 @@
+<div id="wrapper">
+	<header></header>
+
+	<div id="page-wrapper">
+		<div class="row">
+			<h1 class="page-header">ניהול מידע</h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<button type="button" class="btn btn-primary" ng-click="save()">שמור נתונים</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<label>בחירת קטגוריה</label>
+				<div class="form-group input-group">
+					<select class="form-control" ng-options="categorie.categoryName for categorie in info.categories" ng-model="selectCategories"></select>
+					<span class="input-group-btn">
+						<button class="btn btn-default btn-success" type="button" ng-click="addCategory()">
+							<i class="fa fa-plus"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="form-group">
+					<label>שם קטגוריה</label>
+					<input class="form-control" placeholder="שם קטגוריה" ng-model="selectCategories.categoryName">
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="form-group">
+					<button class="btn btn-danger" type="button" ng-click="deleteCategory()"><i class="fa fa-trash-o"></i> מחק קטגוריה</button>
+					<button class="btn btn-default btn-success" type="button" ng-click="addTemplate()"><i class="fa fa-plus"></i> הוספת טמפלייט</button>
+				</div>
+			</div>	
+		</div>	
+		<div class="row">
+			<div class="col-lg-12" ng-repeat="template in selectCategories.templates">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						טמפלייט {{template.templateId}}
+					</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<label>שם התבנית</label>
+							<input class="form-control" placeholder="שם התבנית" ng-model="template.templateName">
+						</div>
+						<div class="form-group">
+							<label>כותרת</label>
+							<input class="form-control" placeholder="כותרת" ng-model="template.excuse.headline">
+						</div>
+						<div class="form-group">
+							<label>פסקה 1</label>
+							<input class="form-control" placeholder="פסקה 1" ng-model="template.excuse.paragraph1">
+						</div>
+						<div class="form-group">
+							<label>פסקה 2</label>
+							<input class="form-control" placeholder="פסקה 2" ng-model="template.excuse.paragraph2">
+						</div>
+						<div class="form-group">
+							<label>פסקה 3</label>
+							<input class="form-control" placeholder="פסקה 3" ng-model="template.excuse.paragraph3">
+						</div>
+						<div class="form-group">
+							<label>סיום</label>
+							<input class="form-control" placeholder="סיום" ng-model="template.excuse.ending">
+						</div>
+						<div class="panel panel-green">
+							<div class="panel-heading">
+								שאלות
+							</div>
+							<div class="panel-body">
+								<div class="form-group input-group" ng-repeat="question in template.questions">
+									<input class="form-control" placeholder="שאלה" ng-model="question.question">
+									<span class="input-group-btn">
+										<button class="btn btn-danger btn-success" type="button" ng-click="deleteQuestion(template,question)">
+											<i class="fa fa-trash-o"></i>
+										</button>
+									</span>
+								</div>
+								<button class="btn btn-default btn-success" type="button" ng-click="addQuestion(template.questions)"><i class="fa fa-plus"></i> הוספת שאלה</button>
+							</div>
+						</div>
+						<button class="btn btn-danger" type="button" ng-click="deleteTemplate(template)"><i class="fa fa-trash-o"></i> מחק טמפלייט</button>
+					</div>
+				</div>
+			</div>			
+		</div>			
+	
+	</div>
+
+</div>

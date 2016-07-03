@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html data-ng-app="comedyApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1,maximum-scale=1, user-scalable=0, height=device-height, width=device-width" />
+        <title>מכונת הסטנדאפ של שחר חסון</title>
+        <meta property="og:image" content="images/Sofsheli_Logo_web.png"/>
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="/js/vendor/scratch.min.js"></script>
+        <base href="/">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-576106-1', 'auto');
+            //ga('send', 'pageview');
+            
+        </script>
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : 668627656577156,
+                xfbml      : true,
+                version    : 'v2.4'
+              });
+            };
+            
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+            
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="elisha_logo"><a href="http://sofsheli.kidstv.co.il/"><img src="images/Sofsheli_Logo_web.png" alt="סופשלי" /></a></div>
+        <div class="kids_logo"><img src="images/kidstv_logo.png" alt="ערוץ הילדים" /></div>
+        <div class="yes_logo"><img src="images/logo_logo.png" alt="Yes" /></div>
+        <div class="teacher_left hidden-xs"><img src="images/ShaharH_web.png" alt="סופשלי" /></div>
+        <div class="main-view" id="main-view" data-ui-view=""></div>
+
+
+        <!-- Footer -->
+        <!-- Footer -->
+        <!--scripts-->
+        <script src="/js/vendor/jquery-2.1.4.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+
+        
+        <script src="/js/vendor/angular.min.js"></script>
+        <script src="/js/vendor/angular-ui-router.min.js"></script>
+
+        <script src="/js/vendor/angular-ui-bootstrap.min.js"></script>
+        <script src="/js/vendor/angulartics.min.js"></script>
+        <script src="/js/vendor/angulartics-google-analytics.js"></script>
+        <script src="/js/vendor/ui-router-styles.js"></script>
+        <script src="/js/vendor/ui-bootstrap-tpls-0.13.0.js"></script>
+        
+
+        <script src="app.js"></script>
+        <script src="services/generalDetails.js"></script>
+        <script src="./components/main/mainCtrl.js"></script>
+        <script src="./components/category/categoryCtrl.js"></script>
+        <script src="./components/comedy/comedyCtrl.js"></script>
+        
+
+
+
+    </body>
+</html>

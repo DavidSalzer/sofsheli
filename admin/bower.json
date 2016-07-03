@@ -1,0 +1,15 @@
+{
+  "name": "socretest admin",
+  "version": "0.0.0",
+  "authors": [
+    "daniel levanon <ldaniel@cambium.co.il>"
+  ],
+  "ignore": [
+  ],
+  "dependencies": {
+    "angular": "1.2.28",
+    "bootstrap": "3.3.5",
+	"angular-ui-router": "0.2.15",
+	"startbootstrap-sb-admin-2": "1.0.7"
+	}
+}

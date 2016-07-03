@@ -1,0 +1,1074 @@
+@font-face {
+    font-family: 'FbKanuba';
+    src: url('../fonts/FbKanuba-Bold.otf') format('opentype');
+    /*src: url('../fonts/Alef-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Alef-Bold.woff') format('woff'),
+		url('../fonts/Alef-Bold.ttf') format('truetype'),
+		url('../fonts/Alef-Bold.svg#alefbold') format('svg');*/
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FbKanuba';
+    src: url('../fonts/FbKanuba-Regular.otf') format('opentype');
+    /*src: url('../fonts/Alef-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Alef-Regular.woff') format('woff'),
+		url('../fonts/Alef-Regular.ttf') format('truetype'),
+		url('../fonts/Alef-Regular.svg#alefregular') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FbKanuba';
+    src: url('../fonts/FbKanuba-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-image: url('../images/rsz_bg_desktop.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-attachment: fixed;
+    direction: rtl;
+    font-family: 'FbKanuba';
+    overflow-x: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+button {
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.modal_title {
+    font-size: 1.2em;
+    color: #eb546f;
+}
+
+.modal-body {
+    padding: 50px;
+}
+
+.teacher_left {
+    position: fixed;
+    bottom: 0px;
+    left: 190px;
+    z-index: 10;
+}
+
+.teacher_right {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+}
+
+
+.elisha_logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+}
+
+.kids_logo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10;
+}
+
+.yes_logo {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 10;
+}
+
+.top_left_note {
+    position: absolute;
+    background-image: url('../images/top_left_note.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 454px;
+    width: 293px;
+    left: 0;
+    top: 40px;
+    z-index: 1;
+}
+
+.top_right_note {
+    position: absolute;
+    background-image: url('../images/top_right_note.png');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 424px;
+    width: 320px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.pencils {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+}
+
+.pencils img {
+    position: relative;
+    left: -50%;
+}
+
+
+/**************** Main Page ******************/
+
+.main_note {
+    width: 969px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.category_note {
+    width: 969px;
+    position: relative;
+}
+
+
+.main_headline {
+    color: #eb546f;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 205px;
+    margin-bottom: 10px;
+}
+
+.dog {
+    margin-right: 115px;
+    margin-top: 20px;
+}
+
+ul.excuse_list {
+    color: #03b1f8;
+    font-size: 45px;
+    font-weight: lighter;
+    margin: 0 110px 0 0;
+}
+
+ul.excuse_list li {
+    margin-bottom: 60px;
+}
+
+ul.excuse_list li:last-child {
+    margin-bottom: 0px;
+}
+
+ul.excuse_list li:hover {
+    cursor: pointer;
+    background-image: url('../images/note_hover.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+/**************** Questions Page ******************/
+
+.klaser_top {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.klaser {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+.klaser_inner {
+    width: 600px;
+    margin: auto;
+    text-align: right;
+}
+
+
+.question_headline {
+    color: #5240b0;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 165px;
+}
+
+.nav_buttons {
+    height: 95px;
+    margin-top: 45px;
+}
+
+.nav_buttons div {
+    cursor: pointer;
+}
+
+.question_wrap {
+    margin-bottom: 25px;
+}
+
+.question_wrap input {
+    background-image: url('../images/text_field.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 67px;
+}
+
+.question {
+    font-size: 37px;
+    color: #facd05;
+    text-shadow: 3px 3px 1px #290e0b;
+}
+
+input {
+    border: none;
+    outline: 0;
+    font-size: 30px;
+    padding-right: 20px;
+    font-family: 'FbKanuba';
+    z-index: 2;
+    position: relative;
+}
+
+
+.error_message {
+    display: none;
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.note {
+    background-image: url('../images/scratch4.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 589px;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 65px 30px 50px 30px;
+    text-align: right;
+    font-family: 'FbKanuba';
+    direction: rtl;
+    margin: auto;
+}
+
+.note p {
+    margin: 0 0 35px;
+}
+
+
+
+/**************** Scracth Page ******************/
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    margin-top: 90px;
+    position: relative;
+}
+
+#scratchcard {
+    display: block;
+    width: 750px;
+    height: 589px;
+    /*border-radius: 23px;*/
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+#excuse {
+    display: block;
+    width: 680px;
+    height: 425px;
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.excuse_title, .tape {
+    display: none;
+}
+
+.tape {
+    position: absolute;
+    background: url('../images/masking-tape.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 833px;
+    height: 527px;
+    top: 108px;
+    right: -50px;
+}
+
+.scratch_title, .excuse_title {
+    text-align: center;
+    margin: auto;
+}
+
+.scratch_title_ie {
+    font-size: 60px;
+    color: #fff;
+    margin: auto;
+    font-weight: bold;
+}
+
+/**************** Excuse Page ******************/
+
+#buttons {
+    width: 724px;
+    position: relative;
+    display: none;
+}
+
+#buttons div {
+    cursor: pointer;
+}
+
+.social {
+    margin-right: 35px;
+}
+
+.back {
+    margin-right: 26px;
+    cursor: pointer;
+}
+
+.note_ie {
+    background-image: url('../images/scratch3.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 750px;
+    height: 589px;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 45px 50px 50px 30px;
+    margin: auto;
+}
+
+
+.note_ie p {
+    margin: 0 0 35px;
+}
+
+/********************************** MEDIA QUERY ***********************************************/
+@media only screen and (max-device-height: 520px) {
+    .category_note, .inner {
+        min-height: 150px !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 359px) {
+
+    .category_note, .inner {
+        min-height: 280px;
+    }
+
+    .nav_buttons {
+        height: 65px;
+        margin-top: 30px;
+    }
+
+    .nav_buttons img {
+        width: 90px;
+        height: auto;
+    }
+
+    #buttons {
+        position: relative;
+        display: none;
+    }
+
+    .social {
+        margin-right: 2%;
+    }
+
+    .social img {
+        width: 30px;
+        height: auto;
+    }
+
+    .back {
+        margin-right: 15px;
+    }
+
+    .back img {
+        width: 85px;
+        height: auto;
+    }
+
+    .scratch_title, .excuse_title {
+        font-size: 23px;
+        margin-right: 13px;
+    }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 374px) {
+    .category_note, .inner {
+        min-height: 320px !important;
+    }
+
+    .nav_buttons {
+        height: 65px;
+        margin-top: 30px;
+    }
+
+    .nav_buttons img {
+        width: 90px;
+        height: auto;
+    }
+
+    #buttons {
+        position: relative;
+        display: none;
+    }
+
+    .social {
+        margin-right: 2%;
+    }
+
+    .social img {
+        width: 32px;
+        height: auto;
+    }
+
+
+    .back img {
+        width: 95px;
+        height: auto;
+    }
+
+    .scratch_title, .excuse_title {
+        font-size: 23px;
+        margin-right: 13px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    .category_note, .inner {
+        min-height: 340px !important;
+    }
+
+    .nav_buttons {
+        height: 65px;
+        margin-top: 30px;
+    }
+
+    .nav_buttons img {
+        width: 90px;
+        height: auto;
+    }
+
+    #buttons {
+        position: relative;
+        display: none;
+    }
+
+    .social {
+        margin-right: 2%;
+    }
+
+    .social img {
+        width: 36px;
+        height: auto;
+    }
+
+    .back {
+        margin-right: 15px;
+    }
+
+
+    .back img {
+        width: 99px;
+        height: auto;
+    }
+
+    .scratch_title, .excuse_title {
+        font-size: 23px;
+        margin-right: 13px;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 479px) {
+    .category_note, .inner {
+        min-height: 380px !important;
+    }
+
+    .nav_buttons {
+        height: 65px;
+        margin-top: 30px;
+    }
+
+    .nav_buttons img {
+        width: 90px;
+        height: auto;
+    }
+
+    #buttons {
+        position: relative;
+        display: none;
+    }
+
+    .social {
+        margin-right: 2%;
+    }
+
+    .social img {
+        width: 42px;
+        height: auto;
+    }
+
+    .back {
+        margin-right: 14px;
+    }
+
+    .back img {
+        width: 115px;
+        height: auto;
+    }
+
+    .scratch_title, .excuse_title {
+        font-size: 26px;
+        margin-right: 19px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 599px) {
+}
+
+@media only screen and (min-width:1023px) and (max-width: 1400px) {
+    .teacher_left {
+        bottom: 0px;
+        left: 103px;
+        z-index: 10;
+    }
+
+    .teacher_left img {
+        width: 180px;
+        height: auto;
+    }
+
+
+    .elisha_logo {
+        top: 10px;
+        left: 15px;
+        z-index: 10;
+    }
+
+    .elisha_logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .kids_logo {
+        bottom: 12px;
+        right: 14px;
+        z-index: 10;
+    }
+
+    .yes_logo {
+        bottom: 12px;
+        left: 14px;
+        z-index: 10;
+    }
+
+    .kids_logo img, .yes_logo img {
+        width: 90px;
+        height: auto;
+    }
+
+
+    /**************** Main Page ******************/
+
+    .main_headline {
+        font-size: 34px;
+        padding-top: 115px;
+    }
+
+
+    ul.excuse_list {
+        font-size: 25px;
+        margin: auto;
+        text-align: center;
+    }
+
+    ul.excuse_list li {
+        margin-bottom: 25px;
+    }
+
+    ul.excuse_list li:hover {
+        background-image: url('../images/note_hover_small.png');
+    }
+
+    /**************** Questions Page ******************/
+
+
+    .klaser {
+        width: 550px;
+        padding-top: 18px;
+    }
+
+    .klaser_inner {
+        width: 465px;
+    }
+
+
+    .question_headline {
+        font-size: 24px;
+        padding-top: 80px;
+    }
+
+    .question_wrap input {
+        background-image: url('../images/text_feild_small.png');
+        background-color: transparent;
+        width: 465px;
+        height: 52px;
+    }
+
+    .nav_buttons {
+        height: 80px;
+        margin-top: 30px;
+    }
+
+    .nav_buttons img {
+        width: 130px;
+        height: auto;
+    }
+
+    .question {
+        font-size: 28px;
+    }
+
+    input {
+        z-index: 2;
+    }
+
+
+    /**************** Excuse Page ******************/
+
+    #buttons {
+        width: 653px;
+        position: relative;
+        display: none;
+    }
+
+    .back {
+        margin-right: 95px;
+    }
+
+    .social {
+        margin-right: 20px;
+    }
+
+    .social img {
+        width: 45px;
+        height: auto;
+    }
+
+
+    .back img {
+        width: 140px;
+        height: auto;
+    }
+
+
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 65px;
+        margin-bottom: 40px;
+    }
+
+    #scratchcard {
+        display: block;
+        width: 550px;
+        height: 432px;
+        /*border-radius: 23px;*/
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+    }
+
+
+    .scratch_title, .scratch_title_ie, .excuse_title {
+        font-size: 45px;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    .elisha_logo {
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        z-index: 10;
+    }
+
+    .elisha_logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .kids_logo {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+    }
+
+    .kids_logo img, .yes_logo img {
+        width: 70px;
+        height: auto;
+    }
+
+    .yes_logo {
+        position: absolute;
+        top: 12px;
+        right: 100px;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+    }
+
+    .teacher_left {
+        display: none;
+    }
+
+    .teacher_left img {
+        width: 215px;
+        height: auto;
+    }
+
+    input {
+        z-index: 2;
+    }
+    /**************** Main Page ******************/
+    .main_headline {
+        padding-top: 72px;
+    }
+
+    .main_headline img {
+        width: 490px;
+    }
+
+    .main_note {
+        background-size: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+
+    .category_note {
+        background-size: 100%;
+        width: 100%;
+        min-height: 0;
+    }
+
+    ul.excuse_list {
+        font-size: 40px;
+        margin: 0 48px 0 0;
+    }
+
+
+    /**************** Questions Page ******************/
+
+    .klaser_top {
+        background-size: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .klaser {
+        width: 100%;
+    }
+
+    .klaser_inner {
+        width: 600px;
+    }
+
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 135px;
+    }
+
+    .question_headline {
+        font-size: 36px;
+    }
+
+.question_headline img {
+       width: 80%;
+       margin: auto;
+    }
+
+    .question {
+        font-size: 28px;
+    }
+
+    /**************** Excuse Page ******************/
+
+    #buttons {
+        width: 640px;
+        position: relative;
+        display: none;
+        margin-top: 15px;
+    }
+
+    .social {
+        margin-right: 20px;
+    }
+
+    .social img {
+        width: 60px;
+        height: auto;
+    }
+
+    .back {
+        margin-right: 60px;
+    }
+
+    .back img {
+        width: 160px;
+        height: auto;
+    }
+
+    #scratchcard {
+        display: block;
+        width: 90%;
+        height: auto;
+        border-radius: 23px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+    }
+
+    .scratch_title, .scratch_title_ie {
+        font-size: 35px;
+        margin-right: 35px;
+    }
+
+    .tape {
+        width: 690px;
+        height: 440px;
+        top: 49px;
+        right: -3px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        background-image: url('../images/bg_mobile.jpg');
+    }
+
+
+    .elisha_mobile img {
+        width: 100%;
+        height: auto;
+    }
+
+    .elisha_logo {
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        z-index: 10;
+    }
+
+    .elisha_logo img {
+        width: 110px;
+        height: auto;
+    }
+
+    .kids_logo {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+    }
+
+    .kids_logo img, .yes_logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    .yes_logo {
+        position: absolute;
+        top: 12px;
+        right: 75px;
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /**************** Main Page ******************/
+
+    .main_note {
+        background-size: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .category_note {
+        background-size: 100%;
+        width: 100%;
+    }
+
+    .main_headline {
+        padding-top: 50px;
+    }
+
+    .main_headline img, ul.excuse_list img {
+        width: 80%;
+        margin: auto;
+    }
+
+    ul.excuse_list {
+        margin: auto;
+    }
+
+
+    /**************** Questions Page ******************/
+
+    .klaser_top {
+        background-size: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .klaser {
+        width: 100%;
+    }
+
+    .klaser_inner {
+        width: 288px;
+    }
+
+    .question_headline {
+        padding-top: 85px;
+    }
+
+    .question_headline img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .question_wrap input {
+        background-image: url('../images/text_field_mobile.png');
+        background-color: transparent;
+        width: 288px;
+        height: 52px;
+    }
+
+    .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 65px;
+    }
+
+    #scratchcard {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .scratch_title img, .excuse_title img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .social {
+        margin-bottom: 25px;
+    }
+
+    #buttons {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .question_wrap {
+        margin-bottom: 15px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .question_wrap {
+        background-color: transparent;
+        width: 288px;
+    }
+}

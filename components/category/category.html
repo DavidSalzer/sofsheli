@@ -1,0 +1,70 @@
+<div class="klaser_top">
+    <div class="question_headline">
+        <img class="hidden-xs" src="./images/title_fill_web.png" alt="מכונת הסטנדאפ של שחר חסון" />
+        <img class="visible-xs" src="./images/title_fill_mobile.png" alt="מכונת הסטנדאפ של שחר חסון" />
+    </div>
+</div>
+<div class="klaser">
+    <div class="klaser_inner">
+        <form name="excuse" ng-submit="saveAns(excuse.$valid)" novalidate>
+            <ul>
+                <li ng-repeat="item in randomTemplate.questions" class="question_wrap">
+                    <div class="question">{{item.question}}</div>
+                    <div class="form-group"><input name="userAnswer" type="text" id="{{item.questionId}}" ng-model="item.answer" class="ff" required maxlength="20" /></div>
+                </li>
+            </ul>
+            <span class="error_message">* יש לענות על כל השאלות</span>
+            <div class="nav_buttons">
+                <button class="left" type="submit"><img src="./images/next_btn.png" alt="המשך" /></button>
+                <button class="right" ng-click="goBack()"><img src="./images/prev_btn.png" alt="חזרה" /></button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="elisha_mobile visible-xs visible-sm"><img src="images/ShaharH_mobile.png" alt="סופשלי" /></div>
+</div>
+
+
+
+<div class="modal fade" id="excusehModal" tabindex="-1" role="dialog" aria-labelledby="excusehModal" aria-hidden="true" clear-publish-modal>
+    <div class="modal-dialog">
+        <div class="modal-content modal-register">
+            <div class="modal-body modal-welcome-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 center">
+                             <p class="modal_title">מייצר תירוץ,</p> 
+                            <p class="modal_title">עוד רגע אחד בבקשה...</p>        
+                            <img src="./images/ajax-loader.gif"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div id="note" style="display: none;">
+    <style>
+        @font-face {
+             font-family: 'FbKanuba';
+             src: url('./fonts/FbKanuba-Light.otf') format('opentype');
+             font-weight: lighter;
+             font-style: normal;
+         }
+           
+        
+    </style>
+    
+    <div class="note">
+        <p ng-bind-html="headline|trustHtml"></p>
+        <p ng-bind-html="paragraph1|trustHtml"></p>
+        <p ng-bind-html="paragraph2|trustHtml"></p>
+        <p ng-bind-html="paragraph3|trustHtml"></p>
+        <p ng-bind-html="ending|trustHtml"></p>
+    </div>
+    
+</div>
+
+<canvas id="canvas" width="750" height="589" style="visibility: hidden; position: absolute;top: 0;left: 0;"></canvas>-->

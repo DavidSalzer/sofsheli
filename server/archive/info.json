@@ -1,0 +1,82 @@
+{
+     "categories": [{
+            "id":"1",
+            "categoryName": "לא הכנתי שיעורי בית",
+            "templates": [{
+            "templateId":"1",
+            "templateName": "category1 - template_name1",
+            "questions":[
+                    {"questionId":"1","question":"פעילות מועדפת?"},
+                    {"questionId":"2","question":"גיל?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ],
+                "excuse":{"headline":"המורה שלום,", "paragraph1":"אתמול לא הכנתי שיעורי בית כי העדפתי לעשות word1 במקום זה.", "paragraph2":"רציתי להגיד לך גם שהפעם האחרונה שהכנתי שיעורים היתה לפני word2 שנים, ובכלל אני חושב ששיעורי הבית שאת נותנת הם דוחים ומגעילים.", "paragraph3":"אבל זה לא משנה כי כשאני אהיה גדול אני רוצה להיות ג'סטין ביבר.", "ending":"תודה,"}
+                },
+            {
+            "templateId":"2",
+            "templateName": "category1 - template_name2",
+            "questions":[
+                    {"questionId":"1","question":"פעילות מועדפת?"},
+                    {"questionId":"2","question":"גיל?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ],
+                "excuse":{"headline":"המורה שלום,", "paragraph1":"אתמול לא הכנתי שיעורי בית כי העדפתי לעשות word1 במקום זה.", "paragraph2":"רציתי להגיד לך גם שהפעם האחרונה שהכנתי שיעורים היתה לפני word2 שנים, ובכלל אני חושב ששיעורי הבית שאת נותנת הם דוחים ומגעילים.", "paragraph3":"אבל זה לא משנה כי כשאני אהיה גדול אני רוצה להיות ג'סטין ביבר.", "ending":"תודה,"}
+                }
+     ]
+            },
+            {
+            "id":"2",
+            "categoryName": "איחרתי לשיעור",
+            "templates": [{
+            "templateId":"1",
+            "templateName": "category2 - template_name1",
+            "questions":[
+                    {"questionId":"1","question":"?"},
+                    {"questionId":"2","question":"?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ]},
+            {
+            "templateId":"2",
+            "templateName": "category2 - template_name2",
+            "questions":[
+                    {"questionId":"1","question":"?"},
+                    {"questionId":"2","question":"?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ]}
+     ]
+            },
+            {
+            "id":"3",
+            "categoryName": "לא הגעתי לבית ספר",
+            "templates": [{
+            "templateId":"1",
+            "templateName": "category3 - template_name1",
+            "questions":[
+                    {"questionId":"1","question":"?"},
+                    {"questionId":"2","question":"?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ]},
+            {
+            "templateId":"2",
+            "templateName": "category3 - template_name2",
+            "questions":[
+                    {"questionId":"1","question":"?"},
+                    {"questionId":"2","question":"?"},
+                    {"questionId":"3","question":"?"},
+                    {"questionId":"4","question":"?"},
+                    {"questionId":"5","question":"?"}
+                ]}
+     ]
+            }
+]
+}
