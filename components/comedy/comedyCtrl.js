@@ -21,7 +21,7 @@ comedyApp.controller('comedyCtrl', ['$rootScope', '$stateParams', '$scope', '$st
     $analytics.eventTrack('PageView', { category: 'Sofshely', label: 'ComedyPage - ' + JSON.stringify($scope.analyticsObj) });
 
     $scope.whatsappShare = function () {
-        $scope.whatsappUrl = 'whatsapp://send?text=זה הסטנדאפ שאני הולך להופיע איתו היום בערב! - ' + $scope.shareText + '  רוצים גם? היכנסו למכונת הסטנדאפ וצרו אחד משלכם: ' + $scope.domain + 'share.php?img=' + $scope.imgPath; 
+        $scope.whatsappUrl = 'whatsapp://send?text=זה הסטנדאפ שאני הולך להופיע איתו היום בערב! - ' + $scope.shareText + '  רוצים גם? היכנסו למכונת הסטנדאפ וצרו אחד משלכם: ' + $scope.domain //+ 'share.php?img=' + $scope.imgPath;
         window.location.href = $scope.whatsappUrl;
         $analytics.eventTrack('ClickShare', { category: 'Sofshely', label: 'Whatsapp - ' + JSON.stringify($scope.analyticsObj) });
     }

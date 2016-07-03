@@ -117,6 +117,10 @@ button {
     z-index: 10;
 }
 
+.yes_logo img {
+    width: 68px;
+}
+
 .top_left_note {
     position: absolute;
     background-image: url('../images/top_left_note.png');
@@ -628,6 +632,9 @@ input {
         height: auto;
     }
 
+    .yes_logo img {
+        width: 70px;
+    }
 
     /**************** Main Page ******************/
 
@@ -774,9 +781,14 @@ input {
         height: auto;
     }
 
+    .yes_logo img {
+        width: 50px;
+        height: auto;
+    }
+
     .yes_logo {
         position: absolute;
-        top: 12px;
+        top: 18px;
         right: 100px;
         z-index: 10;
         width: 50px;
@@ -853,9 +865,9 @@ input {
         font-size: 36px;
     }
 
-.question_headline img {
-       width: 80%;
-       margin: auto;
+    .question_headline img {
+        width: 80%;
+        margin: auto;
     }
 
     .question {
@@ -950,9 +962,13 @@ input {
         height: auto;
     }
 
+    .yes_logo img {
+        width: 30px;
+    }
+
     .yes_logo {
         position: absolute;
-        top: 12px;
+        top: 18px;
         right: 75px;
         z-index: 10;
         width: 50px;
