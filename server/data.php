@@ -80,9 +80,9 @@ function uploadImage($base64){
 
 function makeImage($text){
 	try {
-		$img = new abeautifulsite\SimpleImage("image/comedy.jpg");
-		$y=35;
-		$maxCharInLine=115;
+		$img = new abeautifulsite\SimpleImage("image/comedy2.jpg");
+		$y=30;
+		$maxCharInLine=85;
 		foreach($text as $line){
 			while(strlen($line)>0){
 				$i=$maxCharInLine;
@@ -93,12 +93,12 @@ function makeImage($text){
 				$str=substr($line,0,$i);
 				if(preg_match("/\p{Hebrew}/u", $str))
 					$str=utf8_strrev($str);
-				$img->text($str, 'fonts/FbKanuba-Light.otf', 13, '#000000', 'top right',-25,$y);
+				$img->text($str, 'fonts/FbKanuba-Light.otf', 18, '#000000', 'top right',-30,$y);
 				$line=substr($line,$i);
-				$y+=22;
+				$y+=28;
 			}
 			//$img->text($line, 'fonts/FbKanuba-Light.otf', 13, '#000000', 'top right',-30,$y);
-			$y+=15;
+			$y+=18;
 		}
 
 		$fileName=md5(json_encode($text)).".jpg";

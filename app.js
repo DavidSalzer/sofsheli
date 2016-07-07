@@ -3,7 +3,7 @@ var comedyApp = angular.module('comedyApp', ['ui.router', 'ui.bootstrap', 'uiRou
 /**** UI Router ****/
 comedyApp.config(['$stateProvider', '$urlRouterProvider', '$compileProvider','$analyticsProvider','$locationProvider', function ($stateProvider, $urlRouterProvider, $compileProvider, $analyticsProvider, $locationProvider) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(whatsapp|https?|ftp|mailto|chrome-extension):/);
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise("/main");
 

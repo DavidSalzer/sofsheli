@@ -291,7 +291,7 @@ input {
     background-position: top center;
     background-repeat: no-repeat;
     width: 750px;
-    height: 589px;
+    height: 630px;
     font-size: 24px;
     font-weight: lighter;
     padding: 65px 30px 50px 30px;
@@ -320,7 +320,7 @@ input {
 #scratchcard {
     display: block;
     width: 750px;
-    height: 589px;
+    height: 630px;
     /*border-radius: 23px;*/
     margin-left: auto;
     margin-right: auto;
@@ -373,6 +373,7 @@ input {
     width: 724px;
     position: relative;
     display: none;
+    margin-top: 15px;
 }
 
 #buttons div {
@@ -394,7 +395,7 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
     width: 750px;
-    height: 589px;
+    height: 630px;
     font-size: 24px;
     font-weight: lighter;
     padding: 45px 50px 50px 30px;
@@ -1042,7 +1043,7 @@ input {
     .inner {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        width: 100%;
         margin-top: 65px;
     }
 
