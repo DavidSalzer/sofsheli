@@ -110,6 +110,11 @@ button {
     z-index: 10;
 }
 
+.kids_logo img{
+    height: auto;
+    width: 100px;
+}
+
 .yes_logo {
     position: fixed;
     bottom: 25px;
@@ -629,7 +634,7 @@ input {
     }
 
     .kids_logo img, .yes_logo img {
-        width: 90px;
+        width: 56px;
         height: auto;
     }
 
@@ -959,7 +964,7 @@ input {
     }
 
     .kids_logo img, .yes_logo img {
-        width: 50px;
+        width: 56px;
         height: auto;
     }
 
